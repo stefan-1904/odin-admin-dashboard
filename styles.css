@@ -88,6 +88,11 @@
             width: 100%;
         }
 
+        .sidebaritem > p:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+
     .sidebarend {
         display: flex;
         flex-direction: column;
