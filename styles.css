@@ -13,7 +13,6 @@
 
 .page-container {
     min-height: 100vh;
-    min-width: 100vw;
     display: grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 5fr;
@@ -22,10 +21,11 @@
 .header {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-area: -3 / 3 / -2 / 2;
     background-color: #FFFFFF;
     padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 .searchnav {
@@ -56,31 +56,88 @@
             border-radius: 20px;
         }
 
-    .userinfo {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        padding-left: 40px;
-        padding-right: 40px;
-        gap: 30px;
+        .searchbar > input:focus {
+            outline-color: #575757;
+        }
+
+.userinfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 30px;
+}
+
+    .notificationbell {
+        height: 25px;
+       cursor: pointer;
     }
 
-        .notificationbell {
-            height: 25px;
-            cursor: pointer;
+    .notificationbell:hover {
+        transform: scale(1.1);
+    }
+
+    .profilepicture {
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .profilepicture:hover {
+        transform: scale(1.1);
+    }
+
+    .username {
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+.socialbar {
+    display: flex;
+    padding-left: 50px;
+    width: 100%;
+}
+
+    .usergreeting {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-weight: 600;
+    }
+
+        .smallgreeting {
+            font-size: 1rem;
         }
 
-        .profilepicture {
-            height: 50px;
-            cursor: pointer;
+        .greetingusername {
+            font-size: 1.5rem;
         }
 
-        .username {
-            text-align: center;
-            font-weight: 600;
-            font-size: 1.25rem;
-        }
+    .usergreeting > img {
+        height: 90px;
+    }
+
+.socialbuttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+    .btn {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        padding: 12px 30px 12px 30px;
+        border: 0;
+        border-radius: 30px;
+        background-color: #1992D4;
+        cursor: pointer;
+    }
 
 .sidebar {
     display: flex;
