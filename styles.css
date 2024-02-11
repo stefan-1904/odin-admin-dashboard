@@ -201,7 +201,7 @@
             width: 100%;
         }
 
-        .sidebaritem > p:hover {
+        .sidebaritem:hover {
             cursor: pointer;
             transform: scale(1.05);
         }
@@ -242,6 +242,8 @@
         }
 
             .maincard {
+                display: flex;
+                flex-direction: column;
                 height: 190px;
                 width: 370px;
                 border-left: 10px solid #F0B429;
@@ -249,6 +251,31 @@
                 background-color: #FFFFFF;
                 box-shadow: 7px 10px 5px -6px rgba(0,0,0,0.1);
             }
+
+                .cardimgcontainer {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 30px 30px 0 0;
+                    gap: 20px;
+                }
+
+                    .cardimgcontainer > img:hover {
+                        cursor: pointer;
+                        transform: scale(1.05);
+                    }
+
+                .cardtitle {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    padding: 30px 0 0 20px;
+                }
+
+                    .cardtext {
+                        color: #636363;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        padding: 0 20px 0 0 ;
+                    }
 
     .sidecardcontainer {
         height: 1000px;
@@ -269,8 +296,57 @@
                 box-shadow: 7px 10px 10px -6px rgba(0,0,0,0.1);
             }
 
+                .sidetitle {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    padding: 15px 20px 0 20px;
+                }
+
+                    .sidetext {
+                        color: #636363;
+                        font-size: 0.8rem;
+                        font-weight: 400;
+                        padding: 0 10px 15px 20px;
+                    }
+
+                    .sideline {
+                        margin: 0 20px 0 20px;
+                        width: 84%;
+                    }
+
             .subtitle {
                 font-size: 1.3rem;
                 font-weight: 600;
                 padding: 30px 0 10px 0;
             }
+
+                .sidecard {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    .trendingcontainer {
+                        display: flex;
+                        display: row;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 15px 0 5px 20px;
+                    }
+
+                    .trendingcontainer:hover {
+                        cursor: pointer;
+                        transform: scale(1.02);
+                    }
+
+                    .trendingprofilepicture {
+                        height: 50px;
+                    }
+
+                        .atname {
+                            font-size: 1rem;
+                        }
+
+                        .userproject {
+                            color: #636363;
+                            font-size: 0.9rem;
+                        }
